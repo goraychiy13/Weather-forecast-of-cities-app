@@ -14,4 +14,5 @@ code {
 
 #root {
   background-color: rgb(226, 225, 225);
+  min-height: 200vh;
 }

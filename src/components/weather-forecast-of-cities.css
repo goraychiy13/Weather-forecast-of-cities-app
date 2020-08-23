@@ -1,7 +1,7 @@
 .app-wrapper {
     position: relative;
     width: 375px;
-    height: 812px;
+    height: 200vh;
     background: #FFFFFF;
     display: flex;
     align-items: center;
@@ -54,7 +54,6 @@
 /* identical to box height */
     letter-spacing: -0.05em;
     color: #000000;
-    margin-left: 15px;
 }
 
 .facebook-places {
@@ -70,14 +69,22 @@
     align-items: center;
     justify-content: center;
     width: 305px;
-    padding: 0 35px;
+    padding: 0 20px;
 }
-.city-name-temperature {
+.city-name-temperature, .active {
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 305px;
-    margin: 18px 0;
+    /* margin: 9px 0; */
+    padding: 9px 15px 9px 15px;
+}
+.city-name-temperature:hover {
+    background-color: #ECF7FD;
+}
+.active {
+    background-color: #ECF7FD;
 }
 
 .city-name {
@@ -92,4 +99,86 @@
     font-size: 16px;
     line-height: 19px;
     color: #666666;
+}
+
+/*Modal title */
+#modal-header {
+    align-items: center;
+    justify-content: center;
+}
+
+#modal-header-title {
+    display: flex;
+    font-size: 13px!important;
+    letter-spacing: -0.3px;
+}
+
+.modal-city-name {
+    background-color: rgba(13, 159, 234, 0.08);
+    padding: 0 34px 0 24px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0DA0EA;
+    width: 154px;
+    height: 48px;
+}
+
+.modal-city-date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    font-weight: normal;
+    color: #999999  ;
+    /* letter-spacing: ; */
+}
+
+.modal.show .modal-dialog {
+    width: 375px;
+}
+
+.city-temperature-degrees {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* font-size: 64px; */
+}
+
+.main-wteather-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-temperature-degrees {
+    align-items: flex-start;
+}
+
+.main-degrees {
+    margin-top: 15px;
+}
+
+.city-amplitude-temperature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.humidity-pressure-wind {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.humidity-pressure-wind-info {
+    font-size: 8px;
+    color: #999999;
+}
+
+.humidity-pressure-wind-value{
+    font-weight: 500;
+    font-size: 16px;
+    color: #444444;
 }
